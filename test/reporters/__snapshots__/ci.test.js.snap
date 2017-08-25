@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`custom config and only excluded modules 1`] = `
+"[?25l[JRunning updtr with custom configuration:
+
+- exclude: b, c
+
+[JInstalling missing dependencies[90m...[39m
+[90m> npm install [39m
+[JLooking for outdated modules[90m...[39m
+[90m> npm outdated [39m
+[J[1mNo updates available[22m for the given modules and version range
+[J
+[J[1m3 skipped[22m modules:
+
+[90m-[39m [1ma[22m [90mgit[39m
+[90m-[39m [1mb[22m [90mexcluded[39m
+[90m-[39m [1mc[22m [90mexcluded[39m
+[J
+Finished after 1.0s.
+"
+`;
+
+exports[`no outdated modules 1`] = `
+"[?25l[JInstalling missing dependencies[90m...[39m
+[90m> npm install [39m
+[JLooking for outdated modules[90m...[39m
+[90m> npm outdated [39m
+[JEverything [1mup-to-date[22m
+[J
+[J
+Finished after 1.0s.
+"
+`;
